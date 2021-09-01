@@ -9,6 +9,10 @@ function App() {
             <h1>Dog names</h1>
             {/* Display the DogList component */}
             <DogList />
+
+            {/* TODO: Add message */}
+            
+
         </article>
     )
 }
