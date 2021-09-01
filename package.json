@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@azure/static-web-apps-cli": "^0.7.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "snowpack": "^3.8.8"
+  },
+  "scripts": {
+    "dev": "snowpack dev --open none & swa start http://localhost:8080 --api ./api",
+    "build": "snowpack build"
+  }
+}
