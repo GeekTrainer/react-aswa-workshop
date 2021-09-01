@@ -10,17 +10,19 @@ Let's setup our deployment! [Azure Static Web Apps](https://docs.microsoft.com/a
 1. In the **STATIC WEB APPS** section, select *Sign in to Azure* and complete the authentication process
 1. Select **Create Static Web App**, which is represented as the **+** icon when you mouse over **STATIC WEB APPS**, which will launch the wizard inside Visual Studio Code to setup your static web app
 1. Select your subscription, such as *Azure for Students*
-1. Leave *aswa-workshop* as the name of the new static web and select *Enter*
+1. Leave *react-aswa-workshop* as the name of the new static web and select *Enter*
 1. Select *Custom* for the build preset
 1. Leave */* as the location of your application code
 1. Leave *build* as the location of your build output
 
 Congratulations! You've now created and deployed your site! The deployment process will take just a couple of minutes. The GitHub Action will be added to your repository on GitHub, and run the deployment process, which includes running the build script from *package.json*.
 
-## Browsing your site and next steps
+## Browsing your site
 
 After a couple of minutes have passed, right click your new site in the Static Web Apps extension and select **Browse Site**. You can see your site live!
 
-You will receive a message on the site about [configuring your database](configuring-database.md), which is our next step!.
+> **NOTE**: You will notice the URL is set to a random couple of words followed by a hex value. Fortunately, you can [setup your own custom domain](https://docs.microsoft.com/azure/static-web-apps/custom-domain?WT.mc_id=academic-41542-chrhar).
 
-> **NOTE**: You will notice the URL is set to a random couple of words followed by a hex value. Fortunately, you can [setup your own custom domain](https://docs.microsoft.com/azure/static-web-apps/custom-domain?WT.mc_id=academic-38860-chrhar).
+## Making changes
+
+You've now deployed a website to the cloud! But of course no project is ever finished, and there will always be changes. Let's see how we can [make and deploy changes](4-deploy-updates.md).

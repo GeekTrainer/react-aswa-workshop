@@ -6,14 +6,14 @@ During our workshop we will focus on deploying a project to [Azure Static Web Ap
 
 This workshop is hosted inside the GitHub repository which contains the starter project you will use. It's configured as a [template](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-template-repository), which means you can create a copy of it on your GitHub account with the click of a single button! Let's start by creating the repository you will use for this workshop, and then clone it locally so you can modify the code.
 
-1. Navigate to the starting repository at [https://github.com/geektrainer/swa-workshop](https://github.com/geektrainer/swa-workshop)
+1. Navigate to the starting repository at [https://github.com/geektrainer/swa-workshop](https://github.com/geektrainer/react-aswa-workshop)
 1. In the upper right corner, select **Use this template**
 1. Enter **swa-workshop** for the *Repository name* and select **Create repository from template**
 1. Open a command or terminal window on your computer
 1. Use the following commands to clone the repository and open the code in Visual Studio Code, replacing \<YOUR_GITHUB_HANDLE\> with your GitHub username
 
 ```bash
-git clone https://github.com/<YOUR_GITHUB_HANDLE>/swa-workshop
+git clone https://github.com/<YOUR_GITHUB_HANDLE>/react-aswa-workshop
 cd swa-workshop
 npm install
 code .
@@ -48,7 +48,6 @@ The *src* folder contains the source code for our project which will be used by 
 ### src/store.js
 
 **store.js** simulates our store, a common pattern when creating full-stack web applications. We have a single function called `loadDogs`, which will load the list of dogs from the server. It also contains code to display error messages should something go wrong.
-
 
 ## Congratulations
 

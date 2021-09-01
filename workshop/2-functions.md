@@ -76,4 +76,6 @@ npm run dev
 
 ![Screenshot of starting page](./images/first-launch.png)
 
+## Your first deployment
 
+You now have the application running locally! Next stop - [the cloud](./3-create-aswa.md)!
