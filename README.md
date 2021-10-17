@@ -21,10 +21,10 @@ We want to display a list of dog names on a page. We will start by running every
 
 ## Core steps
 
-1. [Obtain and explore the starter code](1-obtain-starter.md)
-1. [Add Azure Functions for server functionality](2-functions.md)
-1. [Create a Static Web App on Azure and deploy our code](3-create-aswa.md)
-1. [Deploy updates to Azure](4-deploy-updates.md)
+1. [Obtain and explore the starter code](workshop/1-starting.md)
+1. [Add Azure Functions for server functionality](workshop/2-functions.md)
+1. [Create a Static Web App on Azure and deploy our code](workshop/3-create-aswa.md)
+1. [Deploy updates to Azure](workshop/4-deploy-updates.md)
 
 ## Learn more
 
