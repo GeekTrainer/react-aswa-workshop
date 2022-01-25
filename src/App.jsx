@@ -11,7 +11,6 @@ function App() {
             <DogList />
 
             {/* TODO: Add message */}
-            <h2>This is my update</h2>
             
 
         </article>

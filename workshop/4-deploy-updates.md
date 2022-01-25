@@ -13,7 +13,7 @@ Let's modify the page with an new message to demonstrate we've successfully depl
 1. Inside Visual Studio Code, open **src/App.jsx**
 1. Immediately below the line which reads `TODO: Add message` (and before `</article>`), add the following:
 
-  ```html
+  ```jsx
   {/* TODO: Add message */}
   <div>Hosted on Azure Static Web Apps</div>
   ```
