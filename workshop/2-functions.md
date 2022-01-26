@@ -1,10 +1,10 @@
 # Implementing Azure Functions for server-side code
 
-The primary use case for Azure Static Web Apps is for full stack web applications where much of the logic is on the client. However, there will always be a need for server-side code. Azure Static Web Apps supports this through [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview), a serverless offering from Azure. Azure Functions automatically scale eliminating the need to manage VMs and web servers.
+The primary use case for Azure Static Web Apps is for full stack web applications, where much of the logic is on the client. However, there will always be a need for server-side code. Azure Static Web Apps supports this through [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview), a serverless offering from Azure. Azure Functions automatically scale, eliminating the need to manage VMs and web servers.
 
 ## Adding Azure Functions to our project
 
-Let's add server-side code by using Azure Functions. We'll take advantage of the Azure Functions extension in Visual Studio Code. We will create a new folder to hold our functions, create a new function, and then add the appropriate code. You will be creating an "HTTP trigger" function, which behaves similarly to a REST endpoint, allowing you to make HTTP calls to it.
+Let's add server-side code by using Azure Functions. To do this, we'll take advantage of the Azure Functions extension in Visual Studio Code. We will create a new folder to hold our functions, create a new function, and then add the appropriate code. You will be creating an "HTTP trigger" function, which behaves similarly to a REST endpoint, allowing you to make HTTP calls to it.
 
 1. Inside Visual Studio Code, create a new folder named **api** in the root of the project
 1. Select the **Azure** icon to access the **FUNCTIONS** extension
@@ -21,7 +21,7 @@ The project will be created, and a new file at *api/dogs* named *index.js* will 
 
 ## Implementing our logic
 
-A boilerplate function is created for us. We will now replace it with our own logic. What you will notice is the function has two parameters, `context` which contains information about the execution of the function, and `req` which stores information about the request. We will use the `res` property of `context` to generate a JSON payload to return to the user. The code contains comments explaining what each line does.
+A boilerplate function is created for us. We will now replace it with our own logic. What you will notice is the function has two parameters: `context`, which contains information about the execution of the function, and `req`, which stores information about the request. We will use the `res` property of `context` to generate a JSON payload to return to the user. The code contains comments explaining what each line does.
 
 1. Replace the boilerplate code in **api/dogs/index.js** with code to return the array of dogs.
 
@@ -55,7 +55,7 @@ module.exports = async function (context, req) {
 
 ### Breaking down our code
 
-We start by logging a message. Then we set `context.res`, which is the object used to set how to respond to the request:
+We start by logging a message. Then, we set `context.res`, which is the object used to set how to respond to the request:
 
 - `status` for the status message (200 by default)
 - `body` for the payload, to which we add a property called `dogs` with our array
@@ -75,6 +75,8 @@ npm run dev
 1. After the project starts, navigate to [http://localhost:4280](http://localhost:4280) to see your project.
 
 ![Screenshot of starting page](./images/first-launch.png)
+
+> **NOTE:** If your project loads with errors, or not at all, you may not have installed the [Azure Function Core Tools](https://www.npmjs.com/package/azure-functions-core-tools), authenticated with Azure Static Web Apps inside or VS Code, or have a [compatible version of Node.js](https://docs.microsoft.com/en-us/azure/azure-functions/functions-reference-node?tabs=v2#node-version). If you run into a problem, double check these items and try again. 
 
 ## Your first deployment
 
