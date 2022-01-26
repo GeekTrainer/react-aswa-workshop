@@ -11,9 +11,7 @@ Let's setup our deployment! [Azure Static Web Apps](https://docs.microsoft.com/a
 1. Select **Create Static Web App**, which is represented as the **+** icon when you mouse over **STATIC WEB APPS**, which will launch the wizard inside Visual Studio Code to setup your static web app
 1. Select your subscription, such as *Azure for Students*
 1. Leave *react-aswa-workshop* as the name of the new static web and select *Enter*
-1. Select *Custom* for the build preset
-1. Leave */* as the location of your application code
-1. Leave *build* as the location of your build output
+1. Select *React* for the build preset
 
 Congratulations! You've now created and deployed your site! The deployment process will take just a couple of minutes. The GitHub Action will be added to your repository on GitHub, and run the deployment process, which includes running the build script from *package.json*.
 
